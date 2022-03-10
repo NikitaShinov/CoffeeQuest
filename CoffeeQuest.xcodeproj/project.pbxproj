@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4252EAAA2023E05900847430 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4252EAA92023E05900847430 /* APIKeys.swift */; };
 		502225FD27DA541100E3B4D5 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502225FC27DA541100E3B4D5 /* Annotation.swift */; };
+		5022260227DA671500E3B4D5 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5022260127DA671500E3B4D5 /* Business.swift */; };
+		5022260427DA688500E3B4D5 /* BusinessSearchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5022260327DA688500E3B4D5 /* BusinessSearchClient.swift */; };
+		5022260627DA696500E3B4D5 /* YLPClient + BusinessSearchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5022260527DA696500E3B4D5 /* YLPClient + BusinessSearchClient.swift */; };
 		C35933852023BF5700D85500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35933842023BF5700D85500 /* AppDelegate.swift */; };
 		C35933872023BF5700D85500 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35933862023BF5700D85500 /* ViewController.swift */; };
 		C359338A2023BF5700D85500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35933882023BF5700D85500 /* Main.storyboard */; };
@@ -22,6 +25,9 @@
 		0EB69E332F1CF61F584429C4 /* Pods-CoffeeQuest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeQuest.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeeQuest/Pods-CoffeeQuest.release.xcconfig"; sourceTree = "<group>"; };
 		4252EAA92023E05900847430 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		502225FC27DA541100E3B4D5 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		5022260127DA671500E3B4D5 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		5022260327DA688500E3B4D5 /* BusinessSearchClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearchClient.swift; sourceTree = "<group>"; };
+		5022260527DA696500E3B4D5 /* YLPClient + BusinessSearchClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YLPClient + BusinessSearchClient.swift"; sourceTree = "<group>"; };
 		75B5478A401116797B732C06 /* Pods-CoffeeQuest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffeeQuest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoffeeQuest/Pods-CoffeeQuest.debug.xcconfig"; sourceTree = "<group>"; };
 		C35933812023BF5700D85500 /* CoffeeQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35933842023BF5700D85500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +103,30 @@
 			path = Factories;
 			sourceTree = "<group>";
 		};
+		502225FE27DA66AC00E3B4D5 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				5022260527DA696500E3B4D5 /* YLPClient + BusinessSearchClient.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		502225FF27DA66B700E3B4D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5022260127DA671500E3B4D5 /* Business.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5022260027DA66BE00E3B4D5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5022260327DA688500E3B4D5 /* BusinessSearchClient.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		5FEA8354D6F6EA2089B72C93 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +167,9 @@
 		C35933832023BF5700D85500 /* CoffeeQuest */ = {
 			isa = PBXGroup;
 			children = (
+				5022260027DA66BE00E3B4D5 /* Protocols */,
+				502225FF27DA66B700E3B4D5 /* Models */,
+				502225FE27DA66AC00E3B4D5 /* Adapters */,
 				502225FB27DA53F900E3B4D5 /* Factories */,
 				4252EAA42023DFE500847430 /* AppDelegate */,
 				4252EAA52023DFE800847430 /* Controllers */,
@@ -262,8 +295,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C35933972023D71C00D85500 /* BusinessMapViewModel.swift in Sources */,
+				5022260627DA696500E3B4D5 /* YLPClient + BusinessSearchClient.swift in Sources */,
+				5022260427DA688500E3B4D5 /* BusinessSearchClient.swift in Sources */,
 				502225FD27DA541100E3B4D5 /* Annotation.swift in Sources */,
 				4252EAAA2023E05900847430 /* APIKeys.swift in Sources */,
+				5022260227DA671500E3B4D5 /* Business.swift in Sources */,
 				C35933872023BF5700D85500 /* ViewController.swift in Sources */,
 				C35933852023BF5700D85500 /* AppDelegate.swift in Sources */,
 			);
